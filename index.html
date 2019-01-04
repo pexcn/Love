@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Loved</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments"><del>/**</del></span><br />
+				<span class="space"/><span class="comments"><del>* SSAuLi4=</del></span><br />
+				<span class="space"/><span class="comments"><del>* U28gSSBjcmVhdGVkIHRoaXMgcGFnZSB0byAuLi4=</del></span><br />
+				<span class="space"/><span class="comments"><del>*/</del></span><br />
+				Qm95IGkgPSA=<span class="keyword">bmV3</span>IEJveSg=<span class="string">Ik1heCBXaXR0ZW4i</span>KTs=<br />
+				R2lybCB1ID0g<span class="keyword">bmV3</span>IEdpcmwo<span class="string">IlB1cnBsZSBTaGFuIg==</span>KTs=<br />
+				<br />
+				<span class="comments"><del>// QW5kLCBJIC4uLiwgSSAuLi4=</del></span><br />
+				<del>aS5sb3ZlKHUpOw==</del><br />
+				<br />
+				<br />
+				<br />
+
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments"><span class="comments">* SWYgcG9zc2libGUs</span><br />
+				<span class="space"/><span class="comments"><span class="comments">* SSB3aXNoLi4u</span><br />
+				<span class="space"/><span class="comments"><span class="comments">* SSB3aXNoIEkgZGlkbid0IGtub3cgeW91LA==</span><br />
+				<span class="space"/><span class="comments"><span class="comments">* YnV0IEkgZG8u</span><br />
+				<span class="space"/><span class="comments"><span class="comments">*</span><br />
+				<span class="space"/><span class="comments"><span class="comments">*<span class="space"/><span class="space"/><span class="space"/><span class="space"/><span class="space"/>LS0gd3JpdHRlbiBieSBXaXR0ZW4gaW4gMjAxNy4xMC4xNQ==</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						<div class="signature">LSBNYXggV2l0dGVu</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			Copyright © 2017-2019 Max Yv
+		</div>
+		<audio autoplay loop>
+			<source src="media/the-truth-that-you-leave.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2012, 8, 10);
+		together.setHours(12);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			// setInterval(function () {
+			// 	timeElapse(together);
+			// }, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
